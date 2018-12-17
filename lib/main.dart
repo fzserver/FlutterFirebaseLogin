@@ -4,16 +4,8 @@ import 'package:firebase_analytics/observer.dart';
 
 void main() => runApp(LoginApp());
 
-class LoginApp extends StatefulWidget {
-  @override
-  LoginAppState createState() {
-    return new LoginAppState();
-  }
-}
-
-class LoginAppState extends State<LoginApp> {
+class LoginApp extends StatelessWidget {
   FirebaseAnalytics analytics = FirebaseAnalytics();
-
   @override
   Widget build(BuildContext context) =>
     MaterialApp(
@@ -106,7 +98,7 @@ Widget loginBody() =>
                       obscureText: true,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: 60.0),
+                      padding: EdgeInsets.only(top: 36.0),
                     ),
                     MaterialButton(
                       height: 40.0,
